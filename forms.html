@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+   .m{
+       width: 450px;
+       min-height: 300px;
+   }
+   .jumbotron{
+       background: url(/boostrap/images/Desert.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: top;
+   }
+</style>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    
+<div class="jumbotron">
+    <form class="m mx-auto py-01 needs validation" no-validate>
+        <h1 class="display-5 text-primary py-3"> Welcome to our page</h1>
+    
+            <div class="container bg-warning py-4">
+                        <div class="row">
+           <div class="col">
+                <label for="Firstname">Username</label>
+                <span class="input-group-addon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+        <input type="text" id="Firstname" class="form-control" required>
+        <div class="invalid-feedback">Please enter valid username</div>
+    </div>
+    <div class="col">
+    <div class="form-group">
+        <label for="pass">Password</label>
+        <span class="input-group-addon">
+            <i class="fa fa-key" aria-hidden="true"></i>
+        </span>
+        <input type="password" id="pass" class="form-control" required>
+        <div class="invalid-feedback"> Password contains of</div>
+        </div>
+        </div>
+    </div>
+        <div class="form-group">
+        <label for="email">Email Id</label> 
+        <input type="email" id="email" class="form-control" required>
+      </div>
+        <div class="form-check form-check-inline">
+        <input type="radio" id=m name="v" class="form-check-input">
+        <label for="m" class="form-check-label">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+        <input type="radio" id=f name="v" class="form-check-input">
+        <label for="f" class="form-check-label">Female</label>
+        </div>
+    <div class="form-check">
+    <input type="checkbox" id="" class="form-check-input">
+    <label class="form-check-label" for="">Remember me</label>
+    </div>    
+    <button type="submit" class="btn btn-success btn-lg  w-100">
+        Login
+    </button>
+    </div>
+    </form>
+    </div>
+    <script>
+        var form=document.querySelector('.needs-validation');
+        form.addEventListener('submit', function(event) {
+            if(form.checkValidity()===false){
+            event.preventDefault();
+            event.stopPropagation();
+            }
+        form.classList.add('was-validated');
+        } )
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
